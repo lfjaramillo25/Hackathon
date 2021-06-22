@@ -1,0 +1,109 @@
+:root {
+  --secondary-color: #99a4a4;
+  --sunflower-yellow: #ffcd00;
+  --light-navy: #112d68; 
+  --current-color: #26666b;
+  --max-width: 1024px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*reset*/
+html body{
+  font-family: Arial, 'Karla', sans-serif;
+  color: #000000;
+  line-height: normal;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ul li {
+  list-style-type: none;
+}
+
+/*Utility*/
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 52px 76px;
+  overflow: hidden;
+}
+
+
+/*Bar shop*/
+.shop-bar {
+  display: flex;
+  position: sticky;
+  font-family: 'karla', sans-serif;
+  font-size: 17px;
+  padding: .5rem 0;
+}
+.shop-bar > span {
+  color: var(--secondary-color);
+}
+/*Page Numbers*/
+.shop-bar .howtopag {
+  position: absolute;
+  right: 0;
+  color: var(--secondary-color);
+}
+.shop-bar .howtopag .current {
+  background: var(--current-color);
+  padding: 5px;
+  color: #fff;
+}
+.shop-bar .howtopag a {
+  color: #99a4a4;
+  margin-left: 2px;
+}
+
+/*Bar Menu*/
+.shop-bar .bar-menu {
+  margin-left: 20px;
+  width: 222px;
+  position: relative;
+}
+
+.bar-menu ul li i {
+  position: absolute;
+  right: 0;
+  color: var(--secondary-color);
+}
+
+.shop-bar .bar-menu ul li ul {
+  background: rgba(87, 104, 65, 0.85);
+  position: absolute;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  left: 0;
+}
+.shop-bar .bar-menu ul li:hover ul {
+  display: block; 
+  opacity: 1;
+}
+
+.shop-bar .bar-menu ul li ul li a {
+  display: block;
+  padding: .5rem;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px dotted #fff;
+}
+.shop-bar .bar-menu ul li ul li a:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
