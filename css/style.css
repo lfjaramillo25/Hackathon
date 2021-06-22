@@ -24,7 +24,9 @@ a {
 ul li {
   list-style-type: none;
 }
-
+img {
+  width: 100%;
+}
 /*Utility*/
 .container {
   max-width: var(--max-width);
@@ -37,15 +39,18 @@ ul li {
 /*Bar shop*/
 .shop-bar {
   display: flex;
-  position: sticky;
+  position: fixed;
+  width: 872px;
   font-family: 'karla', sans-serif;
   font-size: 17px;
   padding: .5rem 0;
+  background: #fff;
+  top: 39px;
 }
 .shop-bar > span {
   color: var(--secondary-color);
 }
-/*Page Numbers*/
+    /*Page Numbers*/
 .shop-bar .howtopag {
   position: absolute;
   right: 0;
@@ -61,11 +66,12 @@ ul li {
   margin-left: 2px;
 }
 
-/*Bar Menu*/
+    /*Bar Menu*/
 .shop-bar .bar-menu {
   margin-left: 20px;
   width: 222px;
   position: relative;
+  
 }
 
 .bar-menu ul li i {
@@ -75,7 +81,7 @@ ul li {
 }
 
 .shop-bar .bar-menu ul li ul {
-  background: rgba(87, 104, 65, 0.85);
+  background: rgba(116, 142, 179, 0.85);
   position: absolute;
   width: 100%;
   display: none;
@@ -98,6 +104,42 @@ ul li {
   opacity: 0.8;
 }
 
+   /*The shop counter*/
+.shop-counter {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.shop-counter .target {
+  display: grid;
+}
+.shop-counter .target .tag-img img {
+  min-width: 270px;
+  min-height: 270px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+  /*locate*/
+.shop-counter .target p:nth-child(2) {
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+  /*price*/
+.shop-counter .target p:nth-child(4) {
+  color: var(--light-navy);
+  margin-top: 4px;
+  font-weight: bolder;
+}
+.shop-counter .target p:last-child{
+  margin-top: 2rem;
+  color: var(--secondary-color);
+}
+.shop-counter .target p:last-child i {
+  color: var(--sunflower-yellow);
+  margin-right: 6px;
+}
 
 
 
