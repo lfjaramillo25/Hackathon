@@ -17,13 +17,14 @@
       <!--bar of the shop-->
       <div class="shop-bar">
         <span>Ordenar</span>
-        <div class="bar-menu">
-          <ul>
-            <li><a href="#">Relevancia <i class="fas fa-sort-down"></i> </a>
+        <!--Relevance-->
+        <div class="menu-relevance">
+          <ul onclick="menu()">
+            <li>Relevancia <i class="fas fa-angle-down"></i>
               <ul>
-                <li><a href="#">Mejor Puntuacion</a></li>
-                <li><a href="#">Lo más vendido</a></li>
-                <li><a href="#">Lo más buscado</a></li>
+                <li>Mejor puntaje</li>
+                <li>Lo mas comprado</li>
+                <li>Tus favoritos</li>
               </ul>
             </li>
           </ul>
@@ -48,69 +49,87 @@
       <div class="shop-counter">
         <div class="target">
           <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
-        <div class="target">
-          <div class="tag-img"><img src="https://source.unsplash.com/collection/190727/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
-        <div class="target">
-          <div class="tag-img"><img src="https://source.unsplash.com/collection/190728/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
-        <div class="target">
-          <div class="tag-img"><img src="https://source.unsplash.com/collection/190726/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
-        <div class="target">
-          <div class="tag-img"><img src="https://source.unsplash.com/collection/190725/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
-        <div class="target">
-          <div class="tag-img"><img src="https://source.unsplash.com/collection/190720/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
-        <div class="target">
-          <div class="tag-img"><img src="https://source.unsplash.com/collection/190515/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(0)"></i></p>
+          </div>
+        </div> 
         <div class="target">
           <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(1)"></i></p>
+          </div>
+        </div> 
         <div class="target">
-          <div class="tag-img"><img src="https://source.unsplash.com/collection/190327/1600x900"></div>
-          <p>Barranquilla</p>
-          <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
-          <p>Desde COP $378.901</p>
-          <p><i class="fas fa-star"></i> 4.0(151)</p>
-        </div>
-      </div>
-    </div>
+          <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(2)"></i></p>
+          </div>
+        </div> 
+        <div class="target">
+          <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(3)"></i></p>
+          </div>
+        </div> 
+        <div class="target">
+          <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(4)"></i></p>
+          </div>
+        </div> 
+        <div class="target">
+          <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(5)"></i></p>
+          </div>
+        </div> 
+        <div class="target">
+          <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(6)"></i></p>
+          </div>
+        </div> 
+        <div class="target">
+          <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(7)"></i></p>
+          </div>
+        </div> 
+        <div class="target">
+          <div class="tag-img"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+          <div class="tag-info">
+            <p>Barranquilla</p>
+            <h3><a href="#">Shate HGS-617 Dragon Fly True</a></h3>
+            <p>Desde COP $378.901</p>
+            <p><i class="fas fa-star"></i> 4.0(151)<i class="far fa-heart heart-like" onclick="likeHeard(8)"></i></p>
+          </div>
+        </div> 
+      </div> 
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>

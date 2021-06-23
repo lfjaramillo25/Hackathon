@@ -3,6 +3,7 @@
   --sunflower-yellow: #ffcd00;
   --light-navy: #112d68; 
   --current-color: #26666b;
+  --heart-color: #ff741d;
   --max-width: 1024px;
 }
 * {
@@ -31,16 +32,18 @@ img {
 .container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 52px 76px;
+  padding: 3rem 1.5rem;
   overflow: hidden;
 }
-
-
-/*Bar shop*/
+.red-head {
+  color: var(--heart-color);
+}
+  /*Bar shop*/
 .shop-bar {
   display: flex;
-  position: fixed;
-  width: 872px;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
   font-family: 'karla', sans-serif;
   font-size: 17px;
   padding: .5rem 0;
@@ -50,7 +53,7 @@ img {
 .shop-bar > span {
   color: var(--secondary-color);
 }
-    /*Page Numbers*/
+/*Page Numbers*/
 .shop-bar .howtopag {
   position: absolute;
   right: 0;
@@ -65,81 +68,93 @@ img {
   color: #99a4a4;
   margin-left: 2px;
 }
+.shop-bar .howtopag a:hover:not(.current) {
+  color: var(--current-color);
+}
 
-    /*Bar Menu*/
-.shop-bar .bar-menu {
+/*Bar Menu*/
+.menu-relevance {
   margin-left: 20px;
   width: 222px;
+  height: 46px;
+  border-radius: 5px;
+  background: #f4f5f8;
+  padding: 14px 18px;
+  cursor: pointer;
+}
+.menu-relevance:hover {
+  opacity: 0.8;
+}
+.menu-relevance ul {
+  height: 100%;
   position: relative;
   
 }
-
-.bar-menu ul li i {
+.menu-relevance ul li i {
   position: absolute;
   right: 0;
-  color: var(--secondary-color);
 }
 
-.shop-bar .bar-menu ul li ul {
-  background: rgba(116, 142, 179, 0.85);
-  position: absolute;
-  width: 100%;
+.menu-relevance ul li ul {
   display: none;
-  opacity: 0;
-  left: 0;
-}
-.shop-bar .bar-menu ul li:hover ul {
-  display: block; 
-  opacity: 1;
 }
 
-.shop-bar .bar-menu ul li ul li a {
-  display: block;
-  padding: .5rem;
-  color: #fff;
-  text-align: center;
-  border-bottom: 1px dotted #fff;
-}
-.shop-bar .bar-menu ul li ul li a:hover {
-  opacity: 0.8;
-}
-
-   /*The shop counter*/
+    /*The shop counter*/
 .shop-counter {
   margin-top: 3rem;
   padding: 1rem 0;
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
 }
 .shop-counter .target {
   display: grid;
+  box-shadow: 1px 1px 1px 1px rgb(214, 214, 214);
+  border-radius: 5px;
 }
-.shop-counter .target .tag-img img {
+.tag-info {
+  margin: 0 10px 19px 16px;
+}
+.shop-counter .tag-img img {
   min-width: 270px;
   min-height: 270px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   margin-bottom: 1rem;
 }
   /*locate*/
-.shop-counter .target p:nth-child(2) {
+.shop-counter .tag-info p:first-child {
   color: var(--secondary-color);
   margin-bottom: 5px;
 }
   /*price*/
-.shop-counter .target p:nth-child(4) {
+.shop-counter .tag-info p:nth-child(3) {
   color: var(--light-navy);
   margin-top: 4px;
   font-weight: bolder;
+  
 }
-.shop-counter .target p:last-child{
+  /*score*/
+.shop-counter .tag-info p:last-child{
   margin-top: 2rem;
   color: var(--secondary-color);
+  font-size: 13px;
+  position: relative;
 }
-.shop-counter .target p:last-child i {
+.shop-counter .tag-info p:last-child i:first-child {
   color: var(--sunflower-yellow);
   margin-right: 6px;
 }
+/*Heart*/
+.shop-counter .tag-info p:last-child i:last-child {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.shop-counter .tag-info p:last-child i:last-child:hover {
+  color: var(--heart-color);
+}
+
 
 
 
