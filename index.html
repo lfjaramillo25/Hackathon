@@ -14,36 +14,42 @@
 <body>
   <section class="shop">
     <div class="container">
-      <div class="shop-bar">
+      <div class="shop-bar" id="navbar">
         <!--Relevance-->
-        <span>Ordenar</span>
-        <div class="menu-relevance" onclick="menu()">
-          <ul>
-            <li ><div id="select-option">Relevancia</div> <i class="fas fa-angle-down"></i>
-              <ul id="menu-shop">
-                <li class="options"><a href="#" onclick="SlOption(0)">Mejor puntaje</a></li>
-                <li class="options"><a href="#" onclick="SlOption(1)">Lo mas comprado</a></li>
-                <li class="options"><a href="#" onclick="SlOption(2)"> Tus favoritos</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!--Move to the page-->
-        <div class="howtopag">
-          <span>Página</span>
-          <a href="#">1</a>
-          <span>de</span>
-          <a href="#">14</a>
-          <span>|</span>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#" class="current">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <span>...</span>
-          <a href="#">10</a>
+        <div class="center">
+          <span>Ordenar</span>
+          <div class="menu-relevance" onclick="menu()">
+            <ul>
+              <li ><div id="select-option">Relevancia</div> <i class="fas fa-angle-down"></i>
+                <ul id="menu-shop">
+                  <li class="options"><a href="#" onclick="SlOption(0)">Mejor puntaje</a></li>
+                  <li class="options"><a href="#" onclick="SlOption(1)">Lo mas comprado</a></li>
+                  <li class="options"><a href="#" onclick="SlOption(2)"> Tus favoritos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!--Move to the page-->
+          <div class="howtopag">
+            <span>Página</span>
+            <a href="#">1</a>
+            <span>de</span>
+            <a href="#">14</a>
+            <span>|</span>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#" class="current">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <span>...</span>
+            <a href="#">10</a>
+          </div>
         </div>
       </div>
+    </div>
+
+
+    <div class="container">
       <!--The shop counter-->
       <div class="shop-counter">
         <div class="target">

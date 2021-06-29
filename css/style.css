@@ -42,16 +42,24 @@ img {
   background-color: var(--current-color);
   color: #f4f4f4;
 }
-/*Bar shop*/
-.shop-bar {
-  display: flex;
+.center {
+  margin: auto;
+  display: grid;
   align-items: center;
+  justify-content: center;
+  grid-template-columns: auto 2.7fr 1fr;
+  position: relative;
+  padding: .5rem 0;
+}
+/*Shop Bar*/
+.shop-bar {
   font-family: 'karla', sans-serif;
   font-size: 17px;
-  padding: .5rem 0;
   background: #fff;
-  top: 39px;
-  position: relative;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  margin: auto;
 }
 .shop-bar > span {
   color: var(--secondary-color);
@@ -59,8 +67,6 @@ img {
   /*Page Numbers*/
 .shop-bar .howtopag {
   color: var(--secondary-color);
-  position: absolute;
-  right: 0;
 }
 .shop-bar .howtopag .current {
   background: var(--current-color);
@@ -122,7 +128,6 @@ img {
 }
 /*The shop counter*/
 .shop-counter {
-  margin-top: 3rem;
   padding: 1rem 0;
   display: grid;
   width: 100%;

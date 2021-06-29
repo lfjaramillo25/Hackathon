@@ -1,3 +1,27 @@
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.style.position = "fixed";
+    navbar.style.width = "100%";
+    navbar.style.top = "0";
+    navbar.style.left = "0";
+  } else {
+    navbar.style.position = "absolute";
+    navbar.style.width = "";
+    navbar.style.top = "";
+    navbar.style.left = "";
+  }
+}
+
+
 /*Like by Heart function*/
 let heart = document.getElementsByClassName('heart-like');
 let likeHeart = [];
@@ -56,4 +80,6 @@ function SlOption(n) {
   }
   
 }
+
+
 
